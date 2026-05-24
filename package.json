@@ -1,0 +1,32 @@
+{
+  "name": "lab-docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite --host 0.0.0.0",
+    "dev:server": "node server.cjs",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@tiptap/core": "^3.23.6",
+    "@tiptap/extension-collaboration": "^3.23.6",
+    "@tiptap/extension-collaboration-caret": "^3.23.6",
+    "@tiptap/extension-text-style": "^3.23.6",
+    "@tiptap/extension-underline": "^3.23.6",
+    "@tiptap/react": "^3.23.6",
+    "@tiptap/starter-kit": "^3.23.6",
+    "concurrently": "^9.2.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "ws": "^8.21.0",
+    "y-websocket": "^1.5.4",
+    "yjs": "^13.6.30"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.14"
+  }
+}
